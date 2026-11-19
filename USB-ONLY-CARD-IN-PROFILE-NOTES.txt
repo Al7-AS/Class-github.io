@@ -1,0 +1,10 @@
+ClassMind AI 6.4 — USB-only scanner update
+
+Changes in this build:
+- Removed camera UI, camera permissions/stream handling, and camera QR scanning code.
+- Kept USB barcode scanner input on the attendance form. Most USB scanners act as a keyboard and send Enter after the scanned serial number.
+- Moved the student QR card into the student profile modal. Open a student file to view the premium card and use its print button to print that student's card.
+- Removed the standalone card button from the students table and the bulk card-print action from attendance.
+- Other application features and offline QR generation remain unchanged.
+
+No additional JavaScript libraries were added.

@@ -1,0 +1,12 @@
+ClassMind AI 6.4 — QR Attendance Update
+
+Changes:
+- Student cards use a premium matte-black / gold design for printing.
+- Camera scanner requests a higher-resolution stream and checks frames frequently.
+- Successful QR scans register attendance directly without re-rendering the attendance page, so the camera can remain running for the next student.
+- Duplicate attendance on the same date is not added twice.
+- Status shows the student's name and subscription status after a successful scan.
+- All attendance data remains in the app's existing local storage/database; internet is not used for attendance saving.
+
+Compatibility note:
+The camera decoder uses Chromium's built-in BarcodeDetector API when available. Some Electron/Chromium builds do not expose this API. In those builds, the app will show a clear status message and USB barcode scanners/manual serial entry remain available. A guaranteed decoder across all Chromium builds requires bundling a QR-decoding engine, which is not included in this update.

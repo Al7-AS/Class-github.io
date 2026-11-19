@@ -1,0 +1,6 @@
+ClassMind AI - Update 2026-11-05
+
+1) Student profile: Added a "تسجيل المتبقي" action for the current month. It calculates the exact outstanding balance (monthly group fee minus all recorded paid/partial payments for that month) and records only that remainder as a payment. It is disabled when no balance remains.
+2) Attendance: After a successful present/late attendance save, the app plays a short two-tone beep and uses browser speech synthesis with Arabic (ar-EG) to announce the student's name. Absence records do not trigger the attendance sound/announcement.
+
+Validation: src/app.js passes Node.js syntax validation (node --check).
